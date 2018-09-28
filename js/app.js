@@ -23,7 +23,8 @@ function init() {
         monitor.appendChild(blood);
         health.push(blood);
     }
-    game();
+    // Game starts in 2 seconds
+    setTimeout(game, 2000);
 }
 
 // Update Wave Text
