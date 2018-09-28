@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: green;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Luckiest Guy';
+}
+
+#game {
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+    "top"
+    "arena"
+    "bottom";
+    background-color: white;
+    margin-top: 20vh;
+    overflow: hidden; 
+}
+
+#top {
+    grid-area: top;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 64px;
+    width: 650px;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+#score {
+    font-size: 60px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#health-bar {
+    padding-top: 4px;
+}
+
+#arena {
+    grid-area: arena;
+    position: relative;
+    height: 350px;
+    width: 650px;
+    background-color: rosybrown;
+}
+
+#bottom {
+    grid-area: bottom;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 650px;
+    height: 40px;
+}
+
+#stage {
+    font-size: 40px;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+
+#bomb {
+    height: 39px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    visibility: hidden;
+}
+
+#space {
+    width: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    visibility: hidden;
+}
+
+h1:hover {
+    text-decoration: underline;
+}
