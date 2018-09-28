@@ -23,8 +23,7 @@ function init() {
         monitor.appendChild(blood);
         health.push(blood);
     }
-    // Start game in 3 seconds
-    setTimeout(game, 3000);
+    game();
 }
 
 // Update Wave Text
@@ -128,5 +127,7 @@ function game() {
 init();
 
 // Reset game
-resetBtn.addEventListener("click", init);
-// reset wave to 0 and score to 0
+function reset() {
+    location.reload();
+}
+resetBtn.addEventListener("click", reset);
